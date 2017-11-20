@@ -130,11 +130,11 @@ public class CameraView extends FrameLayout {
     @NonNull
     private PreviewImpl createPreviewImpl(Context context) {
         PreviewImpl preview;
-        if (Build.VERSION.SDK_INT < 14) {
-            preview = new SurfaceViewPreview(context, this);
-        } else {
+
+         //   preview = new SurfaceViewPreview(context, this);
+
             preview = new TextureViewPreview(context, this);
-        }
+
         return preview;
     }
 
